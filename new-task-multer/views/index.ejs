@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href='/stylesheets/post.css'>
+  </head>
+  <body>
+   <h1>Hello User!</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data" class="custom-file-upload-form">
+      <label for="fileInput" class="custom-file-upload btn profile-edit-btn"><strong>Upload Image:</strong></label>
+      <input type="file" id="fileInput" name="file" class="input-file">
+      <label for="nameInput" class="custom-file-upload btn profile-edit-btn"><strong>Product Name:</strong></label>
+      <input type="text" id="nameInput" name="name" class="input-text">
+      <label for="descriptionInput" class="custom-file-upload btn profile-edit-btn"><strong>Description:</strong></label>
+      <input type="text" id="descriptionInput" name="description" class="input-text">
+      
+       <input type="submit" value="Upload" class="btn profile-edit-btn" >
+       
+ </form>
+  </body>
+  
+</html>
